@@ -1,79 +1,75 @@
-## Final Team Project at Telerik Academy: Virtual Wallet Web Application
-![](application-screenshots/logo.PNG)
 
-*I am happy to provide the commit history upon request.*
+# Team Runtime Terror Startegio Final Project: Wallet Share
 
-### Short description: 
-We have developed a fintech web application, where users can send money online through their virtual wallets. Users can create their own virtual wallets, add credit cards and top-up money from an external "banking" API that our system uses. They can then send money from their wallets to other users. There a number of features implemented, such as:
-* Email confirmation for new users.
-* Email confirmation for large transactions with an expiry period.
-* Multiple cards (edit/delete) and wallets ("make primary wallet" feature).
-* Referral system, where users can refer their friends by having our system send a registration link via an e-mail and receive 20 euro bonus, if the registration is completed within the expiry period
-* Detailed Transaction History, where users can filter Transactions by Date, Direction (Incoming/Outgoing), Counterparty, and sort by Amount and Date.
-* Under the "My profile" page, the user can see his personal information, his default wallet and total saldo, latest 3 transactions and a bonus feature of "inspirational quotes". Users can edit their personal details and change passwords. 
-* Donation feature, where users can choose to donate a euro upon topping-up (just like with some Bulgarian ATMs). The money go to a specifically created Donation Project User Account, and the total gathered sum from donations is visible on the homepage.
+Wallet Share is a virtual wallet application. Users will have the ability to send money virtually to one another through their virtual wallet.
+In addition, users can use their virtual wallet to complete transactions to pay for goods. Each user will have the ability to create their 
+own wallet and connect their credit card to their virtual wallet account from an external "banking" API that our system uses. With added security, users can feel safe sending money without
+having to worry about exposing their credit card information.
 
-**We have used the following backend technologies:**
-* Spring MVC and Spring Boot framework
-* Hibernate
-* Spring security
+## Acknowledgements
+ - Original Project Creator: Petar Bivolarski at Telerik Academy
+ - [Original Project Link](https://github.com/PetarBivolarski/Virtual-Wallet-Fintech-Web-Application)
+ 
 
-**Additionally, we have used the following frontend technologies:**
-* Spring MVC Framework with Thymeleaf template engine
-* JavaScript and jQuery custom functions to help with certain features (e.g. popup modal confirming Transaction details)
-* A free CSS template which we further customized.
+## Features
 
-### How to build and run the project:
+- Email confirmation for new users.
+- Email confirmation for large transactions with an expiry period.
+- Multiple cards (edit/delete) and wallets ("make primary wallet" feature).
+- Referral system, where users can refer their friends by having our system
+  send a registration link via an e-mail and receive 20 euro bonus, if the registration is completed within the expiry period
+- Detailed Transaction History, where users can filter Transactions by Date, Direction (Incoming/Outgoing), Counterparty,
+  and sort by Amount and Date.
+- Under the "My profile" page, the user can see his personal information, his default wallet and total balance, latest 3 transactions and a bonus feature of "inspirational quotes". Users can edit their personal details and change passwords.
+- Donation feature, where users can choose to donate a euro upon topping-up (just like with some Bulgarian ATMs). The money go to a specifically created Donation Project User Account, and the total gathered sum from donations is visible on the homepage.
 
-Firstly, download the project folder. 
+## Tech Stack
 
-To use the project, a MariaDB database is required. The necessary login credentials should be updated in the **application.properties** file located under VirtualWallet\src\main\resources.
+**Frontend:**  Spring MVC Framework with Thymeleaf template engine, JavaScript and jQuery custom functions, CSS template
 
-Then, the scripts for creating the database schema can be found in VirtualWallet\src\main\resources\sql\schema.sql.
+**Backend:** Java, Spring MVC, Spring Boot Framework, Hibernate, Spring security
 
-The test data with all SQL scripts can be found in VirtualWallet\src\main\resources\sql\schema-data.sql.
+**CI/CD:** AWS Elastic Beanstalk, AWS CodeBuild, AWS CodeCommit, AWS Pipeline 
 
-Then, to build and run the project, assuming you are using IntelliJ IDEA Ultimate Edition, simply run **VirtualWalletApplication.class** located under VirtualWallet\src\main\java\a16team1\virtualwallet.
+**Build:** Gradle, AWS CodeBuild
 
-### Screenshots of the application:
+**Monitor:** AWS CodePipleline, AWS CloudWatch
 
-#### Home page:
-![](application-screenshots/home/1.PNG)
-![](application-screenshots/home/2.PNG)
-![](application-screenshots/home/3.PNG)
-![](application-screenshots/home/4.PNG)
-![](application-screenshots/home/5.PNG)
-![](application-screenshots/home/6.PNG)
+**Database:** AWS RDS, MySQL
 
-#### Sign-up and login:
-![](application-screenshots/signup/1.PNG)
-![](application-screenshots/signup/2.PNG)
-![](application-screenshots/signup/3.PNG)
 
-#### My profile and edit details:
-![](application-screenshots/my-profile/1.PNG)
-![](application-screenshots/my-profile/2.PNG)
-![](application-screenshots/my-profile/3.PNG)
-![](application-screenshots/my-profile/4.PNG)
+## Installation
 
-#### Transaction history and filtering:
-![](application-screenshots/transaction-history/1.PNG)
-![](application-screenshots/transaction-history/2.PNG)
-![](application-screenshots/transaction-history/3.PNG)
-![](application-screenshots/transaction/7.PNG)
+ - Download Repo:
+```bash
+  git clone [Repo URL]
+```
+ 
+ - Update the neccessary login credentials in the application.properties file located under VirtualWallet\src\main\resources.
+ - The scripts for creating the database schema can be found in VirtualWallet\src\main\resources\sql\schema.sql.
+ - The test data with all SQL scripts can be found in VirtualWallet\src\main\resources\sql\schema-data.sql.
+ - To build and run the project, simply run VirtualWalletApplication.class located under VirtualWallet\src\main\java\a16team1\virtualwallet.
+ - Under MySQL connections click the + button
+ - Add your DB connection name
+ - Under parameters tab update the host name to the database endpoint
+ - Update the user and password credentials to be able to access the database endpoint
+ - Connect to database
 
-#### Making a transaction:
-![](application-screenshots/transaction/1.PNG)
-![](application-screenshots/transaction/2.PNG)
-![](application-screenshots/transaction/3.PNG)
+    
+## Screenshots
 
-#### Add funds to wallet with Donation feature:
-![](application-screenshots/transaction/4.PNG)
-![](application-screenshots/transaction/5.PNG)
-![](application-screenshots/transaction/6.PNG)
+```bash
+                    HomeScreen
+```
+![App Screenshot](https://github.com/PetarBivolarski/Virtual-Wallet-Fintech-Web-Application/raw/master/application-screenshots/home/1.PNG)
 
-#### Wallets and cards:
-![](application-screenshots/wallets/2.PNG)
-![](application-screenshots/wallets/3.PNG)
-![](application-screenshots/wallets/1.PNG)
-![](application-screenshots/cards/1.PNG)
+```bash
+                    Filter & Sort
+```
+![App Screenshot](https://github.com/PetarBivolarski/Virtual-Wallet-Fintech-Web-Application/blob/master/application-screenshots/home/3.PNG?raw=true)
+
+```bash
+                Transaction History
+```
+![App Screenshot](https://github.com/PetarBivolarski/Virtual-Wallet-Fintech-Web-Application/raw/master/application-screenshots/my-profile/2.PNG)
+
