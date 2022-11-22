@@ -36,6 +36,8 @@ having to worry about exposing their credit card information.
 **Monitor:** AWS CodePipleline, AWS CloudWatch
 
 **Database:** AWS RDS, MySQL
+![image](https://user-images.githubusercontent.com/62210528/203384067-da834391-7fdd-4864-8476-bde4ccaf56b9.png)
+
 
 
 ## Installation
