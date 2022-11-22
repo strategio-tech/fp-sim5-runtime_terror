@@ -38,6 +38,11 @@ having to worry about exposing their credit card information.
 **Database:** AWS RDS, MySQL
 
 
+```bash
+                    Pipeline
+```
+
+
 ![image](https://user-images.githubusercontent.com/62210528/203384067-da834391-7fdd-4864-8476-bde4ccaf56b9.png)
 
 
